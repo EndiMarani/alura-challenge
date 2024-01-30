@@ -207,7 +207,15 @@ aside {
 
     #result-text {
         width: 90%;
-        font-size: 18px;
+        max-width: 336px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        font-family: var(--main-font);
+        color: var(--aside-color-message);
+        margin-top: 32px;
+        margin-bottom: 20px;
+        word-wrap: break-word;
     }
 
     .btn-copy {
