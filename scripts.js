@@ -45,8 +45,8 @@ function decrypt() {
 
     if (!/^[a-z\s]*$/.test(textarea.value) || textarea.value === '') {    
         alert.style.color = 'red';
-
         textarea.value = '';
+        resultText.value = '';
     } else {
         let decryptMessage = selectText.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
         removeItens();
@@ -60,6 +60,7 @@ function decrypt() {
 
 function copyText() {
     let copyText = document.getElementById('result-text').innerText;
-    alert ('Texto copiado com sucesso.');
     navigator.clipboard.writeText(copyText)
+    alert ('Texto copiado com sucesso.');
 }
+
